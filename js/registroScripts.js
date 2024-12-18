@@ -7,9 +7,14 @@ registrar.addEventListener('click', () => {
 
     // Crear mi objeto que interactúa con el backend
 
-
+    const user = {
+        username: nombreUsuario,
+        email:correoElectronico,
+        password: contrasena,
+    };
+    
     // Comenzar con la llamada de la API (fetch, asynch-await, axios)
-    const url = ``;
+    const url = `http://localhost:8080/api/v1/new-user`;
 
     fetch(url, {
         method: 'POST',

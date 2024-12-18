@@ -2,7 +2,7 @@ const mostrarInfo = document.getElementById('submit');
 
 mostrarInfo.addEventListener('click', () => {
     const correoElectronico = document.getElementById('email').value;
-    // const url = ``;
+    const url = `http://localhost:8080/api/v1/users/email/${correoElectronico}`;
 
     // fetch para método get
     fetch(url)
